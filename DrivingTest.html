@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>驾考一点通</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="idangerous.swiper.css">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 99%;
+        }
+        body {
+            background-color: #e5e5e5;
+            overflow: hidden;
+        }
+        .content {
+            width: 95%;
+            max-width: 1024px;
+            margin: 1% auto;
+            height: 97%;
+            overflow: hidden;
+        }
+        .content .header {
+            font-size: 20pt;
+            height: 40pt;
+            line-height: 40pt;
+            text-align: center;
+        }
+        .articleBox {
+            width: 35%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        .swiper-slide img {
+            width: 100%;
+            box-shadow: 0 0 10pt #b9b9b9;
+            float: left;
+        }
+        .tip {
+            position: absolute;
+            bottom: 5px;
+            font-size: 8pt;
+            color: #333333;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 800px) {
+            .articleBox {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            驾考一点通
+        </div>
+        <article class="articleBox" id="spiritPPT">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/d_1.png"></div>
+                    <div class="swiper-slide"><img src="image/d_2.png"></div>
+                    <div class="swiper-slide"><img src="image/d_3.png"></div>
+                    <div class="swiper-slide"><img src="image/d_4.png"></div>
+                    <div class="swiper-slide"><img src="image/d_5.png"></div>
+                    <div class="swiper-slide"><img src="image/d_6.png"></div>
+                    <div class="swiper-slide"><img src="image/d_7.png"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </article>
+        <div class="tip">微信小程序无法提供预览，以截图进行展示</div>
+    </div>
+</body>
+<script src="idangerous.swiper.min.js"></script>
+<script>
+    var mySwiper = new Swiper('#spiritPPT .swiper-container', {
+        autoplay: 3000,
+        speed: 1000,
+        pagination: '#spiritPPT .swiper-pagination',
+        paginationClickable: true,
+        autoplayDisableOnInteraction: false
+    });
+</script>
+</html>
