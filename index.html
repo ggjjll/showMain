@@ -171,6 +171,8 @@
 <script src="jquery.min.js"></script>
 <script src="jquery.lazyload.min.js"></script>
 <script type="text/javascript">
-    $("img").lazyload();
+    $("img").lazyload({
+        placeholder : "image/loading.jpg"
+    });
 </script>
 </html>
